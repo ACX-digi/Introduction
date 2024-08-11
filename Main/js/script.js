@@ -1,14 +1,5 @@
-// Assignment Code
-var generateBtn = document.querySelector("#personal");
+const button = document.querySelector("button");
 
-// Write click event to the #Onclick input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
-}
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+button.addEventListener("click", (event) => {
+  button.textContent = `Click count: ${event.detail}`;
+});

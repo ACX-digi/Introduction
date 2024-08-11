@@ -2,9 +2,14 @@
     box-sizing: border-box;
   }
   
-  body {
+  .body {
     font-family: Arial;
     margin: 0;
+    background: img('Main/assets/css/images/blur.jpeg');
+  }
+
+  .hero {
+  text-size-adjust: 100%;
   }
   
   .container {
