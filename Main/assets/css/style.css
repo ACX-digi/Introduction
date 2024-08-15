@@ -5,14 +5,13 @@
   .body {
     font-family: Arial;
     margin: 0;
-    background: img('Main/assets/css/images/blur.jpeg');
+    background: src('Main/assets/css/images/_.jpeg');
+    background-repeat: image no repeat;
+    background-position: image center;
+    background-size: image cover;
   }
 
-  .hero {
-  text-size-adjust: 100%;
-  }
-  
-  .container {
+  .box {
     display: flex;
     flex-direction: row;
     /* Centers along the main axis determined by flex-direction */
@@ -26,22 +25,26 @@
     border-style: solid;
     border-width: 2px;
   }
-  
-  .container-card {
-    padding: 5px;
-    width: 180px;
-    text-align: center;
-    border-style: solid;
-    border-width: 1px;
+  .view {
+    flex-direction: column;
+ }
+
+.view div {
+  position: relative;
+  margin: 0 0 3em;
+  padding: 0 7px 1.85em /* 1.85em space for the span*/
+}
+  .view div {
+    margin: 0 0 3em;
+    position: relative;
   }
-  
-  .container-card header {
-    padding: 10px;
-    background: #b89898;
-    color: #fff;
+  .view img {
+    display:block;
   }
-  
-  .container-card img {
-    width: 75px;
-    height: 75px
+  .view span {
+    position: absolute;
+    bottom:10px; left:17px;
+    padding:4px;
+    background:rgba(255, 255, 255, .6);
+    border-radius:4px;
   }
